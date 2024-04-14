@@ -1,0 +1,28 @@
+name: LLM_LangChain_Unstructured
+
+channels:
+  - defaults
+  - anaconda
+  - conda-forge
+  - pytorch
+
+dependencies:
+  - python=3.10
+  - pytorch=2.1.2
+  - pywin32
+  - poppler
+  - torchvision
+  - langchain
+  - jupyter
+  - ipywidgets
+  - tesseract
+  - lxml
+  - selenium=4
+  - sentence-transformers
+  - pip:
+    - huggingface-hub
+    - layoutparser
+    - "unstructured[all-docs]"
+    - "astrapy>=0.5.3"
+    - langchain-openai
+    - qdrant-client
